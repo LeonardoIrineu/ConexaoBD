@@ -69,10 +69,6 @@ dobackaofront/
 - Certifique-se de que o servidor MySQL esteja ativo ao rodar o programa.
 - O driver JDBC deve estar incluído no seu projeto (`mysql-connector-java`).
 
-## 📄 Licença
-
-Este projeto está licenciado sob a licença MIT.
-
 ## 👨‍💻 Autor
 
 - Leonardo Izidoro Irineu
