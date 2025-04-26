@@ -1,4 +1,4 @@
-package dobackaofront;
+package dobackaofront.model;
 
 public class Usuario {
 
@@ -15,6 +15,8 @@ public class Usuario {
     private double peso;
 
     private double altura;
+
+    public Usuario() {}
 
     public Usuario(String nome, int idade, char sexo, String cpf, String cor_da_pele,  double peso, double altura) {
         this.nome = nome;
@@ -80,5 +82,18 @@ public class Usuario {
 
     public void setAltura(double altura) {
         this.altura = altura;
+    }
+
+
+    public void apresentar() {
+        System.out.println("Usuario{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", sexo=" + sexo +
+                ", cpf='" + cpf + '\'' +
+                ", cor_da_pele='" + cor_da_pele + '\'' +
+                ", peso=" + peso +
+                ", altura=" + altura +
+                '}');
     }
 }

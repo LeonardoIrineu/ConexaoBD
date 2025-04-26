@@ -1,20 +1,53 @@
 package dobackaofront;
 
 import dobackaofront.controller.BancoDeDados;
+import dobackaofront.model.Usuario;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class Main {
 
     public static void main(String[] args) throws SQLException {
-//        Usuario usuario1 = new Usuario("Leonardo", 28, 'm',"12345678911","amarelo",73.5,1.70);
-//        Usuario usuario2 = new Usuario("Karollyne", 23, 'f',"12345678911","negra",54.5,1.60);
 
         BancoDeDados bd = new BancoDeDados();
-        bd.deletarDados(2);
+
+        Usuario usuario = new Usuario();
+        usuario.setNome("João");
+        usuario.setIdade(28);
+        usuario.setSexo('m');
+        usuario.setCpf("12345678911");
+        usuario.setCor_da_pele("branca");
+        usuario.setPeso(61);
+        usuario.setAltura(1.78);
+
+        bd.alterarDados(6, usuario);
+
+
+
+
+
+
+//        ArrayList<Usuario> usuarios = new ArrayList<Usuario>();
+//
+//        for (int i=0; i<6; i++){
+//            Usuario usuario = bd.getUsuario(i);
+//            usuarios.add(usuario);
+//        }
+//
+//        System.out.println("até aqui");
+//        System.out.println(usuarios.size());
+//
+//        for (int i=0; i<usuarios.size(); i++){
+//            if (usuarios.get(i) == null){
+//                continue;
+//            }else {
+//                usuarios.get(i).apresentar();
+//            }
+//
+//        }
+
+//        bd.inserirDados(usuario1);
+//        bd.deletarDados(2);
 
     }
 }
